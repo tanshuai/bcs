@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "repository": "tanshuai/bcs",
+  "repository_id": 465540432,
+  "date": "2026-10-03",
+  "source_sha": "937ca7610f618a0abb3a74afd892de1765c349de",
+  "entries": [
+    {
+      "original_path": ".github/workflows/ci.yml",
+      "archived_path": "archive/github-actions/2026-10-03/.github/workflows/ci.yml",
+      "source_blob_sha": "b742e1a381233f4b0650197649a1b63b0785fc83",
+      "sha256": "02e1816cabc3292d13fefe4d45350fd32b05b6f8f2160cfa662686ab8a33f35b",
+      "workflow_id": null,
+      "workflow_state_before": null,
+      "business_consumer": "Inherited upstream-only automation from diem/bcs",
+      "retirement_reason": "No current custom development/deployment consumer identified; owner-approved archival of inherited fork automation; preserve source and passive security alerts",
+      "config_finding_ids": [
+        "CFG-006"
+      ],
+      "secret_names": [],
+      "external_entrypoint_types": [],
+      "local_dependency_paths": [],
+      "restore": "Restore archived YAML and the listed dependency snapshots in a reviewed PR; validate runtime/action versions, consumers and write destinations before explicitly re-enabling the original workflow ID."
+    },
+    {
+      "original_path": ".github/workflows/rustdoc.yml",
+      "archived_path": "archive/github-actions/2026-10-03/.github/workflows/rustdoc.yml",
+      "source_blob_sha": "83e51ba8dd90f1e9976ca6c7f9cd6fafb4637506",
+      "sha256": "f95fa69a72e1e10f9e9e8f223d35364dc58048913f3aa7b93bb749a676c307bb",
+      "workflow_id": null,
+      "workflow_state_before": null,
+      "business_consumer": "Inherited upstream-only automation from diem/bcs",
+      "retirement_reason": "No current custom development/deployment consumer identified; owner-approved archival of inherited fork automation; preserve source and passive security alerts",
+      "config_finding_ids": [],
+      "secret_names": [
+        "GITHUB_TOKEN"
+      ],
+      "external_entrypoint_types": [],
+      "local_dependency_paths": [],
+      "restore": "Restore archived YAML and the listed dependency snapshots in a reviewed PR; validate runtime/action versions, consumers and write destinations before explicitly re-enabling the original workflow ID."
+    }
+  ],
+  "code_and_dependency_snapshots": [
+    {
+      "original_path": "Cargo.toml",
+      "archived_path": "archive/github-actions/2026-10-03/Cargo.toml",
+      "source_blob_sha": "ac48aac94d74128577772754d080ccd650a0f2ea",
+      "sha256": "1f33fe8741b787f591809660de0fec823261524ee779f336db9cb2fa85f4cbba",
+      "original_retained": true,
+      "reason": "workflow-local/direct code or dependency configuration copied for recovery; shared source left in place"
+    }
+  ],
+  "upstream_preflight": {
+    "parent": "diem/bcs",
+    "source_sha": "937ca7610f618a0abb3a74afd892de1765c349de",
+    "ahead_by": 0,
+    "behind_by": 4,
+    "status": "behind",
+    "retained_runs": 0,
+    "semantic_note": "Current entrypoints reviewed individually; only inherited upstream CI/tests/releases/doc generators, no custom fork commits or live production consumer identified. No repository Actions enabling or passive alert changes."
+  },
+  "caller_check": {
+    "current_all_accessible_workflows": 286,
+    "remaining_reusable_callers": [],
+    "external_dispatch_note": "Declared dispatch/manual entrypoints recorded; entire retired source preserved. No dispatch APIs were invoked."
+  },
+  "passive_security_alerts": "No alert setting changed. Archived version-update YAML is no longer active configuration.",
+  "rollback": "Reviewed source restoration plus explicit workflow enablement; for unsafe cross-repository publishers establish an updated producer/consumer contract and guarded destination before restoring."
+}
